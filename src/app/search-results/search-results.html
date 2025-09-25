@@ -1,0 +1,17 @@
+<div class="text-center mb-3">
+  <h5 class="fw-bold">Search Results ({{ filteredArticles.length }})</h5>
+</div>
+
+<div *ngIf="filteredArticles.length > 0; else noResults">
+  <div *ngFor="let a of filteredArticles" class="card mb-3 shadow-sm">
+    <div class="card-body">
+      <h6 class="card-title text-black">{{ a.title }}</h6>
+      <p class="card-text">{{ a.description }}</p>
+      <a [href]="a.url" target="_blank" class="btn btn-sm btn-outline-primary">Visit</a>
+    </div>
+  </div>
+</div>
+
+<ng-template #noResults>
+  <p class="text-danger text-center fw-bold">No results found</p>
+</ng-template>

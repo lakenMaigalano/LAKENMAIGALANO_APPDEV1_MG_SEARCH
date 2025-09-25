@@ -1,0 +1,10 @@
+<div class="mb-4">
+  <input
+    type="text"
+    class="form-control form-control-lg"
+    placeholder="Search..."
+    [(ngModel)]="searchQuery"
+  />
+</div>
+
+<app-search-results [searchQuery]="searchQuery"></app-search-results>
