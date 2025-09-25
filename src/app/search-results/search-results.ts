@@ -40,10 +40,7 @@ export class SearchResults {
       url: 'https://www.prada.com', 
       description: 'Italian luxury brand with sleek, minimalist, and high-fashion handbag designs.' 
     },
-    { title: 'Fendi', 
-      url: 'https://www.fendi.com', 
-      description: 'Known for the Baguette bag and playful yet luxurious handbag collections.' 
-    },
+    
     { title: 'Saint Laurent', 
       url: 'https://www.ysl.com', 
       description: 'Parisian chic handbags with edgy yet elegant style, including the iconic YSL logo.'
